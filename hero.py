@@ -12,9 +12,10 @@ sys.setdefaultencoding('utf8')
 
 os.chdir('E:/hxj/million hero/WD-Helper-master/WD-Helper-master/atq/src')
 
-APP_ID = '10662975'
-API_KEY = 'kmlRTdhxGZRhxV6sVTGmVlAG'
-SECRET_KEY = 'wqAWGKPWHZP9VxhcmfL3PCQrS4hwDXL9'
+# 百度OCR信息，使用自己注册的即可
+APP_ID = '***'
+API_KEY = '***'
+SECRET_KEY = '***' 
 
 
 def autoChoose():
@@ -43,8 +44,7 @@ def autoChoose():
     if ret:
         ask = ''
         lines = ret['words_result']
-        # for line in lines:
-        # logger(line['words'])
+
 
         if len(lines) <= 4:
             ask = lines[0]['words'].split('.')[-1]
@@ -59,16 +59,12 @@ def autoChoose():
         Coption = lines[-1]['words']
         Boption = lines[-2]['words']
         Aoption = lines[-3]['words']
-        Coption = '耳机'
-        Boption = '纸'
-        Aoption = '杂货'
     else:
         Aoption, Boption, Coption = ' ', ' ', ' '
 
-
-
-    keyword = "诺基亚手机生产商最初以生产什么为主"
+    keyword = ask
     print keyword
+	
     convey = 'n'
     end_time = time.time()
     if convey == 'y' or convey == 'Y':
