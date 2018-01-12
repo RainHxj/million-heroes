@@ -9,15 +9,15 @@
 
 ## 效果：
 
- ![result1](result\result1.png)
+ ![result1](https://github.com/RainHxj/million-heroes/blob/master/result/result1.png)
 
 
 
-![result2](result\result2.png)
+![result2](https://github.com/RainHxj/million-heroes/blob/master/result/result2.png)
 
 
 
-![result3](result\result3.png)
+![result3](https://github.com/RainHxj/million-heroes/blob/master/result/result3.png)
 
 
 
